@@ -1,0 +1,187 @@
+daniel-laryea-education/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── assets/
+    └── images/
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniel Laryea Education</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <h1>Daniel Laryea Education</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#resources">Resources</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Empowering Minds Through Education</h2>
+  <p>Learn. Grow. Succeed.</p>
+  <button onclick="enroll()">Enroll Now</button>
+</section>
+
+<section id="about">
+  <h2>About Daniel</h2>
+  <p>Daniel Laryea is passionate about helping students understand difficult subjects in simple ways.</p>
+</section>
+
+<section id="courses">
+  <h2>Courses Offered</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Mathematics</h3>
+      <p>Algebra, Geometry, Calculus and more.</p>
+    </div>
+    <div class="card">
+      <h3>Science</h3>
+      <p>Physics, Chemistry, Biology simplified.</p>
+    </div>
+    <div class="card">
+      <h3>ICT</h3>
+      <p>Web development, coding and technology.</p>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <h2>Free Study Resources</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Past Questions</h3>
+      <p>Download practice materials.</p>
+    </div>
+    <div class="card">
+      <h3>Video Lessons</h3>
+      <p>Step-by-step explanations.</p>
+    </div>
+    <div class="card">
+      <h3>Study Tips</h3>
+      <p>Improve your academic performance.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: danieleducation@example.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Daniel Laryea Education. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f4f7fa;
+  color:#333;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:#002244;
+  color:white;
+  position:fixed;
+  width:100%;
+}
+
+header h1{
+  font-weight:800;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#00c6ff;
+}
+
+section{
+  padding:120px 10%;
+  min-height:100vh;
+}
+
+.hero{
+  background:linear-gradient(135deg,#002244,#0055aa);
+  color:white;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero h2{
+  font-size:45px;
+}
+
+button{
+  padding:12px 30px;
+  margin-top:20px;
+  border:none;
+  border-radius:30px;
+  background:#00c6ff;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#0088cc;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:40px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#002244;
+  color:white;
+}
+function enroll() {
+  alert("Thank you for choosing Daniel Laryea Education! We will contact you soon.");
+}
